@@ -60,7 +60,7 @@ function AuthLayout({children}) {
     checkToken();
   return (
     <>
-
+ {auth ?
 
     <div className='flex w-full'>
         {opendrawer &&
@@ -97,10 +97,11 @@ function AuthLayout({children}) {
 }
 
 
-    {auth ?  children : null}
+    { children } 
         </div>
 
     </div>
+    : null}
 
     </>
   )
