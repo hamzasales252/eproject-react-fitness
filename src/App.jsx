@@ -9,6 +9,7 @@ import GuestLayout from './layout/GuestLayout'
 import User from './pages/User';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Workout from './pages/Workout';
 
 const API_URL = import.meta.env.VITE_API_URL
 function App() {
@@ -26,6 +27,10 @@ function App() {
         } />
           <Route path="user" element={ 
          <AuthLayout><User /></AuthLayout>
+        } />
+
+<Route path="workout" element={ 
+         <AuthLayout><Workout /></AuthLayout>
         } />
         </>
     )
